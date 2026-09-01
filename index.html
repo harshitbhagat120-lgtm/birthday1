@@ -3,32 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Birthday!</title>
+  <title>A Cute Birthday Surprise!</title>
+  <!-- Link to the Cute Stylesheet -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Font: Playful and Rounded -->
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Background Animated Orbs -->
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
+  <!-- Confetti/Particle Container -->
+  <div id="particle-container"></div>
 
-  <div class="card" id="card">
-    <div class="photo-frame">
-      <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=300&q=80" alt="Special Person Photo">
-    </div>
+  <div class="cute-container">
+    <div class="cute-card">
+      
+      <!-- Cute Cake Graphic -->
+      <div class="graphic-container cake-animation">
+        <img src="https://img.icons8.com/bubbles/200/birthday-cake.png" alt="Cute Birthday Cake" class="cake-icon">
+      </div>
 
-    <h1>Happy Birthday!</h1>
-    <p class="subtitle">To an extraordinary person who lights up every room and brings endless radiance into my life.</p>
-    
-    <button class="btn" id="revealBtn">Tap to Unfold</button>
-    
-    <div class="message-box" id="secretNote">
-      <p><strong>To Someone Incredibly Special,</strong></p>
-      <p style="margin-top: 8px;">Your presence makes everything brighter, your laughter is contagious, and your kindness inspires everyone around you. Thank you for simply being you.</p>
-      <p style="margin-top: 12px;">May this new year bring you boundless happiness, unforgettable adventures, and every dream you are chasing!</p>
+      <div class="divider top-divider"></div>
+
+      <h1 class="cute-title">Happiest Birthday!</h1>
+      
+      <p class="cute-subtitle">
+        To a very special, wonderful, and <span class="sparkle-text">sparkly</span> person! 
+        I hope your day is filled with giant smiles, fluffy clouds, and your favorite treats.
+      </p>
+      
+      <button class="cute-btn" id="revealBtn">Tap for a Hug! ✨</button>
+      
+      <div class="message-wrapper" id="secretNote">
+        <div class="cute-message-box">
+          <p class="celebration-icon">🎉</p>
+          <p class="greeting"><strong>Hey You!</strong></p>
+          <p>Your laugh is the absolute best, and you make every single day feel extra cozy and happy. Thank you for just being your wonderful, amazing self.</p>
+          <p class="closing">Wishing you the biggest hug and the best birthday ever!</p>
+          <p class="heart-icon">💖</p>
+        </div>
+      </div>
+
+      <div class="divider bottom-divider"></div>
+
     </div>
   </div>
 
+  <!-- Link to the JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
